@@ -15,7 +15,7 @@ const CopyrightFooter = () => {
 
   return (
     // Top border mein Indian Flag ka Saffron touch ya standard accent color
-    <div className="bg-[#1e293b] text-slate-300 text-sm border-t-4 border-[#e85b2c] shadow-inner font-sans">
+    <div className="bg-[#1e293b] text-slate-300 text-sm  shadow-inner font-sans">
       <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-4">
 
         {/* Left Section - Copyright & Update Info */}

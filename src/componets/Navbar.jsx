@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { ChevronDown, Menu, X, Search, Globe } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(null);
@@ -60,10 +60,20 @@ const Navbar = () => {
   return (
     <nav ref={navRef} className="bg-[#025D7B] shadow-lg sticky top-0 z-50">
 
+      {/* Top Navbar */}
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
 
-        {/* Mobile Menu Button */}
-        <div className="md:hidden text-white">
+        {/* Mobile Logo ONLY */}
+        <div className="md:hidden">
+          <img
+            src="/images/logo.jpg"   // <-- apna logo path yaha lagao
+            alt="logo"
+            className="h-9 rounded  w-auto"
+          />
+        </div>
+
+        {/* Mobile Menu Button RIGHT */}
+        <div className="md:hidden ml-auto text-white">
           <button
             onClick={() => setMobileMenu(!mobileMenu)}
             className="p-2 hover:bg-white/10 rounded-lg"
@@ -73,7 +83,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-1">
+        <div className="hidden md:flex items-center gap-1 ">
           {menuItems.map((menu, index) => (
             <div
               key={index}
@@ -103,7 +113,7 @@ const Navbar = () => {
                 )}
               </button>
 
-              {/* Dropdown */}
+              {/* Desktop Dropdown */}
               {menu.subMenu && openMenu === index && (
                 <div className="absolute top-[110%] left-0 w-64 bg-white text-gray-800 shadow-2xl rounded-xl py-3 border border-gray-100">
                   {menu.subMenu.map((item, i) => (
@@ -122,8 +132,6 @@ const Navbar = () => {
             </div>
           ))}
         </div>
-
-        
       </div>
 
       {/* Mobile Menu */}

@@ -17,7 +17,7 @@ const FooterTopLinks = () => {
   return (
     // Base container with a slightly darker border at the bottom for separation
     <div className="bg-[#0E6174] text-gray-100 py-3.5 font-sans border-b border-[#0a4654]">
-      <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-5">
+      <div className="max-w-8xl mx-auto px-10 flex flex-col lg:flex-row items-center justify-between gap-5">
         
         {/* Navigation Links Section - Converted to semantic <ul> list */}
         <nav aria-label="Footer Quick Links" className="w-full lg:w-auto">
