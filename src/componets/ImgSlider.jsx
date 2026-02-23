@@ -79,7 +79,7 @@ const ImgSlider = () => {
             />
             
             {/* Slide Content */}
-            <div className="absolute top-1/2 left-8 md:left-20 -translate-y-1/2 z-20 max-w-xl text-white space-y-4">
+            <div className="absolute top-1/2 left-8 md:left-31 -translate-y-1/2 z-20 max-w-xl text-white space-y-4">
               <h2 className="text-3xl md:text-5xl font-extrabold leading-tight animate-in slide-in-from-left duration-700">
                 {slide.title}
               </h2>
@@ -94,7 +94,7 @@ const ImgSlider = () => {
 
       {/* Spotlight Bar (Modern Glassmorphism) */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 w-[92%] max-w-7xl">
-        <div className="bg-white/90 backdrop-blur-lg shadow-[0_8px_32px_rgba(0,0,0,0.12)] rounded flex items-center overflow-hidden border border-white/20">
+        <div className="bg-white/50 backdrop-blur-lg shadow-[0_8px_32px_rgba(0,0,0,0.12)] rounded flex items-center overflow-hidden border border-white/20">
           
           {/* Label with Icon */}
           <div className="bg-white/40 text-black px-5 md:px-8 py-4 font-bold flex items-center gap-2 shrink-0">

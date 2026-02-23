@@ -12,18 +12,15 @@ const Header = () => {
 
       {/* Main Header - Mobile me hidden */}
       <header className="hidden md:block w-full bg-[#fcfdfe] border-b border-gray-100">
-        
         <div className="bg-gradient-to-r from-[#014b63] via-[#025D7B] to-[#087ca3] shadow-inner py-3 md:py-5">
           <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
-
             {/* Left Section: Logo + Title */}
             <div className="flex flex-col lg:flex-row items-center gap-6 text-center md:text-left">
-              
               {/* Logo Container */}
-              <div className="bg-white p-2">
+              <div className="bg-white rounded-xl p-2">
                 <div className="h-16 sm:h-20 w-32 sm:w-40 flex items-center justify-center">
                   <img
-                    className="max-h-full max-w-full object-contain"
+                    className="max-h-full  max-w-full object-contain"
                     src="/images/logos.png"
                     alt="Institute Logo"
                   />
@@ -55,7 +52,7 @@ const Header = () => {
             </div>
 
             {/* Right Section */}
-            <div className="flex items-center gap-3 p-2.5 sm:p-3 shrink-0 mt-2 md:mt-0">
+            <div className="flex items-center backdrop-blur-sm  rounded-2xl shadow-sm  bg-[#055976  ] gap-3 p-2.5 sm:p-3 shrink-0 mt-2 md:mt-0">
               <img
                 src="/images/dst_logo.png"
                 alt="Department of Biotechnology Logo"
@@ -66,7 +63,6 @@ const Header = () => {
                 Department of Biotechnology
               </div>
             </div>
-
           </div>
         </div>
       </header>
